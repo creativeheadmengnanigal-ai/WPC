@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #0A1628; color: #F8FAFB; overflow-x: hidden; }
+
+#intro-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  background: #060D1A;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.9s ease, visibility 0.9s ease;
+}
+#intro-overlay.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #060D1A; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#00B4A0, #2A6BC7); border-radius: 3px; }
+
+.reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.7s cubic-bezier(.22,1,.36,1), transform 0.7s cubic-bezier(.22,1,.36,1); }
+.reveal.in { opacity: 1; transform: none; }
+.rd1{transition-delay:.08s} .rd2{transition-delay:.16s} .rd3{transition-delay:.24s}
+.rd4{transition-delay:.32s} .rd5{transition-delay:.40s} .rd6{transition-delay:.48s}
+
+@keyframes glitch1 {
+  0%,100%{clip-path:inset(0 0 95% 0);transform:translate(-3px,0)}
+  20%{clip-path:inset(30% 0 50% 0);transform:translate(3px,0)}
+  40%{clip-path:inset(60% 0 20% 0);transform:translate(-2px,0)}
+  60%{clip-path:inset(80% 0 5% 0);transform:translate(2px,0)}
+  80%{clip-path:inset(15% 0 70% 0);transform:translate(-1px,0)}
+}
+@keyframes glitch2 {
+  0%,100%{clip-path:inset(80% 0 0% 0);transform:translate(3px,0)}
+  20%{clip-path:inset(50% 0 30% 0);transform:translate(-3px,0)}
+  60%{clip-path:inset(10% 0 80% 0);transform:translate(2px,0)}
+}
+.glitch { position: relative; }
+.glitch::before, .glitch::after { content: attr(data-text); position: absolute; inset: 0; font: inherit; color: inherit; }
+.glitch::before { color: #00B4A0; animation: glitch1 4s infinite steps(1); opacity: 0.6; }
+.glitch::after  { color: #2A6BC7; animation: glitch2 4s infinite steps(1); opacity: 0.6; }
+
+@keyframes blink { 50% { opacity: 0; } }
+.cursor::after { content: '|'; animation: blink 1s infinite; color: #00B4A0; margin-left: 2px; }
+
+@keyframes arcPulse {
+  0%,100% { filter: drop-shadow(0 0 8px #00B4A0) drop-shadow(0 0 24px #00B4A040); }
+  50%      { filter: drop-shadow(0 0 20px #00D4BC) drop-shadow(0 0 60px #00B4A070); }
+}
+.arc-glow { animation: arcPulse 2.5s ease-in-out infinite; }
+
+@keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+.float { animation: floatY 5s ease-in-out infinite; }
+
+@keyframes shimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
+.btn-shimmer {
+  background: linear-gradient(90deg, #00B4A0 0%, #00D4BC 40%, #ffffffaa 50%, #00D4BC 60%, #00B4A0 100%);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+.perspective-grid {
+  background-image: linear-gradient(rgba(0,180,160,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(0,180,160,0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.card-hover { transition: transform 0.35s ease, box-shadow 0.35s ease; }
+.card-hover:hover { transform: translateY(-6px); box-shadow: 0 24px 60px -12px rgba(0,180,160,0.28); }
+
+@keyframes scan { 0%{top:0;opacity:1} 100%{top:100%;opacity:0} }
+.scanline { position:absolute; left:0; right:0; height:2px; background:linear-gradient(90deg,transparent,#00B4A0,transparent); animation:scan 3s linear infinite; pointer-events:none; }
+
+@keyframes introArc { from{stroke-dashoffset:800} to{stroke-dashoffset:0} }
+.intro-arc { stroke-dasharray: 800; animation: introArc 1.6s cubic-bezier(.4,0,.2,1) forwards; }
+
+@keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }
+.fade-in-up { animation: fadeInUp 0.6s ease forwards; }
+
+@keyframes counterSpin { from{opacity:0;transform:translateY(30px) scale(0.8)} to{opacity:1;transform:none} }
+.counter-in { animation: counterSpin 0.5s cubic-bezier(.34,1.56,.64,1) forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration:0.01ms!important; transition-duration:0.01ms!important; }
+}
