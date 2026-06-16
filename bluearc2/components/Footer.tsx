@@ -18,7 +18,7 @@ export default function Footer() {
                 <circle cx="14" cy="5" r="1.8" fill="#00B4A0"/>
                 <defs><linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#00B4A0"/><stop offset="100%" stopColor="#2A6BC7"/></linearGradient></defs>
               </svg>
-              <span style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:16, color:"#F8FAFB" }}>
+              <span style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:16, color:"#F8FAFB" }}>
                 Blue<span style={{ color:"#00B4A0" }}>arc</span> Contracting LLC
               </span>
             </div>
@@ -29,7 +29,7 @@ export default function Footer() {
 
           {cols.map(col=>(
             <div key={col.title}>
-              <h4 style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:13, color:"#F8FAFB", marginBottom:18 }}>{col.title}</h4>
+              <h4 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13, color:"#F8FAFB", marginBottom:18 }}>{col.title}</h4>
               <ul style={{ listStyle:"none", padding:0, display:"flex", flexDirection:"column", gap:10 }}>
                 {col.items.map(item=>(
                   <li key={item}>

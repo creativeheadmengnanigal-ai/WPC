@@ -29,7 +29,7 @@ export default function Contact() {
           <div>
             <div className="reveal">
               <span style={{ fontFamily:"'Inter',sans-serif", fontSize:11, fontWeight:600, color:"#00B4A0", letterSpacing:"0.3em", textTransform:"uppercase", display:"block", marginBottom:12 }}>Get in Touch</span>
-              <h2 style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,48px)", color:"#0A1628", lineHeight:1.1, marginBottom:16 }}>
+              <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,48px)", color:"#0A1628", lineHeight:1.1, marginBottom:16 }}>
                 Let's Build<br/>
                 <span style={{ WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", backgroundImage:"linear-gradient(135deg,#1E4A8C,#00B4A0)", backgroundClip:"text" }}>Something Solid.</span>
               </h2>
@@ -58,14 +58,14 @@ export default function Contact() {
           {/* Form */}
           <div className="reveal rd2" style={{ borderRadius:24, overflow:"hidden", background:"linear-gradient(145deg,#0E1E3A,#132549)" }}>
             <div style={{ padding:"40px 36px" }}>
-              <h3 style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:20, color:"#F8FAFB", marginBottom:28 }}>Request a Quote</h3>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:20, color:"#F8FAFB", marginBottom:28 }}>Request a Quote</h3>
 
               {status === "sent" ? (
                 <div style={{ textAlign:"center", padding:"48px 0" }}>
                   <div style={{ width:64, height:64, borderRadius:"50%", background:"linear-gradient(135deg,#00B4A0,#2A6BC7)", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 20px" }}>
                     <svg viewBox="0 0 24 24" fill="none" width="32" height="32"><path d="M5 12L10 17L19 7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </div>
-                  <p style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:20, color:"#F8FAFB", marginBottom:8 }}>Message Sent!</p>
+                  <p style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:20, color:"#F8FAFB", marginBottom:8 }}>Message Sent!</p>
                   <p style={{ fontFamily:"'Inter',sans-serif", fontSize:14, color:"rgba(248,250,251,0.45)" }}>We'll get back to you within 24 hours.</p>
                 </div>
               ) : (

@@ -108,7 +108,7 @@ export default function Hero({ visible }: { visible: boolean }) {
           border: "1px solid rgba(0,180,160,0.3)", background: "rgba(0,180,160,0.08)",
         }}>
           <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#00B4A0", display: "block", animation: "arcPulse 1.5s ease-in-out infinite" }}/>
-          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, color: "#00B4A0", letterSpacing: "0.25em", textTransform: "uppercase" }}>
+          <span style={{ fontFamily: "'Inter'", fontSize: 11, fontWeight: 600, color: "#00B4A0", letterSpacing: "0.25em", textTransform: "uppercase" }}>
             UAE & Middle East Specialists
           </span>
         </div>
@@ -116,7 +116,7 @@ export default function Hero({ visible }: { visible: boolean }) {
         {/* Main headline */}
         <h1 className="fade-in-up" style={{
           animationDelay: "0.25s", animationFillMode: "both",
-          fontFamily: "'Syne', sans-serif", fontWeight: 800,
+          fontFamily: "'Inter'", fontWeight: 800,
           fontSize: "clamp(44px, 8vw, 96px)", lineHeight: 1.02,
           letterSpacing: "-0.03em", color: "#F8FAFB", marginBottom: 24,
         }}>
@@ -136,7 +136,7 @@ export default function Hero({ visible }: { visible: boolean }) {
         {/* Subhead */}
         <p className="fade-in-up" style={{
           animationDelay: "0.4s", animationFillMode: "both",
-          fontFamily: "'Inter', sans-serif", fontWeight: 300, fontSize: "clamp(16px, 2.5vw, 20px)",
+          fontFamily: "'Inter'", fontWeight: 300, fontSize: "clamp(16px, 2.5vw, 20px)",
           color: "rgba(248,250,251,0.55)", lineHeight: 1.7, maxWidth: 600, margin: "0 auto 40px",
         }}>
           Specialized welding &amp; industrial painting contracting — delivering quality, safety, and precision across oil &amp; gas, marine, offshore, and infrastructure.
@@ -145,7 +145,7 @@ export default function Hero({ visible }: { visible: boolean }) {
         {/* CTAs */}
         <div className="fade-in-up" style={{ animationDelay: "0.55s", animationFillMode: "both", display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 64 }}>
           <a href="#contact" className="btn-shimmer" style={{
-            padding: "14px 36px", borderRadius: 50, fontFamily: "'Inter', sans-serif",
+            padding: "14px 36px", borderRadius: 50, fontFamily: "'Inter'",
             fontWeight: 700, fontSize: 15, color: "#0A1628", textDecoration: "none",
             transition: "transform 0.2s, box-shadow 0.2s",
           }}
@@ -155,7 +155,7 @@ export default function Hero({ visible }: { visible: boolean }) {
             Request a Quote
           </a>
           <a href="#services" style={{
-            padding: "14px 36px", borderRadius: 50, fontFamily: "'Inter', sans-serif",
+            padding: "14px 36px", borderRadius: 50, fontFamily: "'Inter'",
             fontWeight: 600, fontSize: 15, color: "rgba(248,250,251,0.8)", textDecoration: "none",
             border: "1px solid rgba(248,250,251,0.2)", transition: "all 0.2s",
           }}
@@ -178,11 +178,11 @@ export default function Hero({ visible }: { visible: boolean }) {
               background: "rgba(10,22,40,0.7)",
               borderRight: i < 3 ? "1px solid rgba(0,180,160,0.1)" : "none",
             }}>
-              <p style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(22px, 4vw, 32px)",
+              <p style={{ fontFamily: "'Inter' ", fontWeight: 800, fontSize: "clamp(22px, 4vw, 32px)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
                 backgroundImage: "linear-gradient(135deg, #00B4A0, #2A6BC7)", backgroundClip: "text",
               }}>{s.val}</p>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 10, fontWeight: 500, color: "rgba(248,250,251,0.35)", letterSpacing: "0.2em", textTransform: "uppercase", marginTop: 4 }}>{s.label}</p>
+              <p style={{ fontFamily: "'Inter'", fontSize: 10, fontWeight: 500, color: "rgba(248,250,251,0.35)", letterSpacing: "0.2em", textTransform: "uppercase", marginTop: 4 }}>{s.label}</p>
             </div>
           ))}
         </div>

@@ -132,7 +132,7 @@ export default function IntroOverlay({ onDone }: Props) {
         {/* Logo wordmark */}
         <div style={{ opacity: phase === "arc" ? 0 : 1, transform: phase === "arc" ? "translateY(12px)" : "none", transition: "opacity 0.5s 0.2s, transform 0.5s 0.2s" }}>
           <h1 className="glitch" data-text="Bluearc" style={{
-            fontFamily: "'Syne', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: "clamp(48px, 10vw, 80px)",
             fontWeight: 800,
             color: "#F8FAFB",
@@ -141,7 +141,7 @@ export default function IntroOverlay({ onDone }: Props) {
           }}>
             Blue<span style={{ color: "#00B4A0" }}>arc</span>
           </h1>
-          <p style={{ fontFamily: "'Syne', sans-serif", fontSize: 13, letterSpacing: "0.35em", color: "rgba(248,250,251,0.4)", textTransform: "uppercase", marginTop: 6 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.35em", color: "rgba(248,250,251,0.4)", textTransform: "uppercase", marginTop: 6 }}>
             Contracting LLC
           </p>
         </div>

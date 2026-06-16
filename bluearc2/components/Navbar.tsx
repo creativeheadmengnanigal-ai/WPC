@@ -55,7 +55,7 @@ export default function Navbar({ visible }: { visible: boolean }) {
               </linearGradient>
             </defs>
           </svg>
-          <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: "#F8FAFB", lineHeight: 1 }}>
+          <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800, fontSize: 18, color: "#F8FAFB", lineHeight: 1 }}>
             Blue<span style={{ color: "#00B4A0" }}>arc</span>
             <span style={{ display: "block", fontSize: 9, fontWeight: 400, color: "rgba(248,250,251,0.4)", letterSpacing: "0.3em", textTransform: "uppercase" }}>Contracting LLC</span>
           </span>

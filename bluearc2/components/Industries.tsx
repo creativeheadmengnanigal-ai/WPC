@@ -19,7 +19,7 @@ export default function Industries() {
       <div style={{ position:"relative", zIndex:1, maxWidth:1280, margin:"0 auto", padding:"0 24px" }}>
         <div className="reveal" style={{ marginBottom:56 }}>
           <span style={{ fontFamily:"'Inter',sans-serif", fontSize:11, fontWeight:600, color:"#00B4A0", letterSpacing:"0.3em", textTransform:"uppercase", display:"block", marginBottom:12 }}>Sectors We Serve</span>
-          <h2 style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,52px)", color:"#F8FAFB", lineHeight:1.1 }}>
+          <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,52px)", color:"#F8FAFB", lineHeight:1.1 }}>
             Industries We Work In
           </h2>
         </div>
@@ -35,7 +35,7 @@ export default function Industries() {
             onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.background="rgba(255,255,255,0.04)"; el.style.borderColor="rgba(255,255,255,0.08)"; el.style.transform="none"; }}
             >
               <span style={{ fontSize:28, display:"block", marginBottom:14 }}>{item.icon}</span>
-              <h3 style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:15, color:"#F8FAFB", marginBottom:6, lineHeight:1.3 }}>{item.name}</h3>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:15, color:"#F8FAFB", marginBottom:6, lineHeight:1.3 }}>{item.name}</h3>
               <p style={{ fontFamily:"'Inter',sans-serif", fontSize:12, color:"rgba(248,250,251,0.4)" }}>{item.desc}</p>
             </div>
           ))}
@@ -43,7 +43,7 @@ export default function Industries() {
           {/* CTA card */}
           <div className="reveal rd6 float" style={{ borderRadius:16, padding:24, display:"flex", flexDirection:"column", justifyContent:"space-between", background:"linear-gradient(135deg,#1E4A8C,#00B4A0)" }}>
             <div>
-              <h3 style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:18, color:"#fff", marginBottom:8 }}>Ready to start?</h3>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:18, color:"#fff", marginBottom:8 }}>Ready to start?</h3>
               <p style={{ fontFamily:"'Inter',sans-serif", fontSize:13, color:"rgba(255,255,255,0.7)" }}>Tell us about your project requirements.</p>
             </div>
             <a href="#contact" style={{

@@ -29,7 +29,7 @@ export default function HSQ() {
       <div style={{ maxWidth:1280, margin:"0 auto", padding:"0 24px" }}>
         <div className="reveal" style={{ textAlign:"center", maxWidth:560, margin:"0 auto 56px" }}>
           <span style={{ fontFamily:"'Inter',sans-serif", fontSize:11, fontWeight:600, color:"#00B4A0", letterSpacing:"0.3em", textTransform:"uppercase", display:"block", marginBottom:12 }}>Non-Negotiables</span>
-          <h2 style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,52px)", color:"#0A1628", lineHeight:1.1, marginBottom:16 }}>
+          <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,52px)", color:"#0A1628", lineHeight:1.1, marginBottom:16 }}>
             Health, Safety & Quality
           </h2>
           <p style={{ fontFamily:"'Inter',sans-serif", fontSize:16, color:"rgba(10,22,40,0.55)", lineHeight:1.7 }}>
@@ -44,7 +44,7 @@ export default function HSQ() {
               border:"1px solid rgba(10,22,40,0.07)", textAlign:"center", cursor:"default",
             }}>
               <div style={{ display:"flex", justifyContent:"center", marginBottom:20 }}>{p.icon}</div>
-              <h3 style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:20, color:"#0A1628", marginBottom:12 }}>{p.title}</h3>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:20, color:"#0A1628", marginBottom:12 }}>{p.title}</h3>
               <p style={{ fontFamily:"'Inter',sans-serif", fontSize:13, color:"rgba(10,22,40,0.55)", lineHeight:1.7 }}>{p.desc}</p>
             </div>
           ))}
@@ -55,7 +55,7 @@ export default function HSQ() {
           <div className="scanline"/>
           <div style={{ padding:"40px 48px", display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"space-between", gap:24 }}>
             <div>
-              <h3 style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:"clamp(20px,3vw,30px)", color:"#fff", marginBottom:8 }}>Every project. Every weld. Every coat.</h3>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:"clamp(20px,3vw,30px)", color:"#fff", marginBottom:8 }}>Every project. Every weld. Every coat.</h3>
               <p style={{ fontFamily:"'Inter',sans-serif", fontSize:14, color:"rgba(255,255,255,0.5)" }}>Delivered to spec, on time, with zero safety compromises.</p>
             </div>
             <a href="#contact" className="btn-shimmer" style={{

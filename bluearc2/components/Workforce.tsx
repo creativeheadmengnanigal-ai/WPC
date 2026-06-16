@@ -29,7 +29,7 @@ export default function Workforce() {
         <div>
           <div className="reveal">
             <span style={{ fontFamily:"'Inter',sans-serif", fontSize:11, fontWeight:600, color:"#00B4A0", letterSpacing:"0.3em", textTransform:"uppercase", display:"block", marginBottom:12 }}>Our Team</span>
-            <h2 style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,48px)", color:"#0A1628", lineHeight:1.1, marginBottom:16 }}>
+            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,48px)", color:"#0A1628", lineHeight:1.1, marginBottom:16 }}>
               Skilled People.<br/>
               <span style={{ WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", backgroundImage:"linear-gradient(135deg,#1E4A8C,#00B4A0)", backgroundClip:"text" }}>Strong Outcomes.</span>
             </h2>
@@ -58,7 +58,7 @@ export default function Workforce() {
             }}>
               <span style={{ fontSize:22, display:"block", marginBottom:10 }}>{r.icon}</span>
               <span style={{ display:"inline-block", padding:"3px 8px", borderRadius:50, fontSize:10, fontWeight:600, fontFamily:"'Inter',sans-serif", background:"rgba(0,180,160,0.1)", color:"#00B4A0", marginBottom:8 }}>{r.badge}</span>
-              <h4 style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:13, color:"#0A1628", lineHeight:1.35 }}>{r.title}</h4>
+              <h4 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:13, color:"#0A1628", lineHeight:1.35 }}>{r.title}</h4>
             </div>
           ))}
         </div>

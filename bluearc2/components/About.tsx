@@ -20,7 +20,7 @@ export default function About() {
         <div>
           <div className="reveal">
             <span style={{ fontFamily:"'Inter',sans-serif", fontSize:11, fontWeight:600, color:"#00B4A0", letterSpacing:"0.3em", textTransform:"uppercase", display:"block", marginBottom:12 }}>Who We Are</span>
-            <h2 style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,48px)", color:"#F8FAFB", lineHeight:1.1, marginBottom:32 }}>
+            <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,48px)", color:"#F8FAFB", lineHeight:1.1, marginBottom:32 }}>
               Trusted Contractor<br/>
               <span style={{ WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", backgroundImage:"linear-gradient(135deg,#00B4A0,#2A6BC7)", backgroundClip:"text" }}>Across the Region.</span>
             </h2>
@@ -37,7 +37,7 @@ export default function About() {
             <div key={item.label} className={`reveal rd${i+1}`} style={{ background:"rgba(255,255,255,0.04)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:16, padding:24, display:"flex", gap:16, marginBottom:16 }}>
               <div style={{ width:40, height:40, borderRadius:"50%", background:"linear-gradient(135deg,#00B4A0,#2A6BC7)", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}>{item.icon}</div>
               <div>
-                <h3 style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:16, color:"#F8FAFB", marginBottom:8 }}>{item.label}</h3>
+                <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:16, color:"#F8FAFB", marginBottom:8 }}>{item.label}</h3>
                 <p style={{ fontFamily:"'Inter',sans-serif", fontSize:13, color:"rgba(248,250,251,0.5)", lineHeight:1.7 }}>{item.text}</p>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function About() {
 
         {/* Values */}
         <div>
-          <h3 className="reveal" style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:24, color:"#F8FAFB", marginBottom:24 }}>Core Values</h3>
+          <h3 className="reveal" style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:24, color:"#F8FAFB", marginBottom:24 }}>Core Values</h3>
           <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:14 }}>
             {values.map((v,i)=>(
               <div key={v.v} className={`reveal rd${Math.min(i+1,6)}`} style={{
@@ -58,7 +58,7 @@ export default function About() {
               onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.background="rgba(255,255,255,0.05)"; el.style.borderColor="rgba(255,255,255,0.08)"; el.style.transform="none"; }}
               >
                 <span style={{ fontSize:22, display:"block", marginBottom:8 }}>{v.icon}</span>
-                <span style={{ fontFamily:"'Syne',sans-serif", fontWeight:600, fontSize:14, color:"#F8FAFB" }}>{v.v}</span>
+                <span style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:14, color:"#F8FAFB" }}>{v.v}</span>
               </div>
             ))}
           </div>

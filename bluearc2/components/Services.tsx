@@ -53,7 +53,7 @@ export default function Services() {
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px" }}>
         <div className="reveal" style={{ marginBottom: 56 }}>
           <span style={{ fontFamily:"'Inter',sans-serif", fontSize:11, fontWeight:600, color:"#00B4A0", letterSpacing:"0.3em", textTransform:"uppercase", display:"block", marginBottom:12 }}>What We Do</span>
-          <h2 style={{ fontFamily:"'Syne',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,52px)", color:"#0A1628", lineHeight:1.1, maxWidth:520 }}>
+          <h2 style={{ fontFamily:"'Inter',sans-serif", fontWeight:800, fontSize:"clamp(32px,5vw,52px)", color:"#0A1628", lineHeight:1.1, maxWidth:520 }}>
             Industrial Services,{" "}
             <span style={{ WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", backgroundImage:"linear-gradient(135deg,#1E4A8C,#00B4A0)", backgroundClip:"text" }}>
               Built to Last.
@@ -72,7 +72,7 @@ export default function Services() {
                 onMouseEnter={e=>(e.currentTarget as HTMLDivElement).style.background="rgba(0,180,160,0.18)"}
                 onMouseLeave={e=>(e.currentTarget as HTMLDivElement).style.background="rgba(0,180,160,0.08)"}
               >{s.icon}</div>
-              <h3 style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:18, color:"#0A1628", marginBottom:10 }}>{s.title}</h3>
+              <h3 style={{ fontFamily:"'Inter',sans-serif", fontWeight:700, fontSize:18, color:"#0A1628", marginBottom:10 }}>{s.title}</h3>
               <p style={{ fontFamily:"'Inter',sans-serif", fontSize:13, color:"rgba(10,22,40,0.55)", lineHeight:1.7, marginBottom:16 }}>{s.desc}</p>
               <div style={{ display:"flex", flexWrap:"wrap", gap:6 }}>
                 {s.tags.map(t=>(
