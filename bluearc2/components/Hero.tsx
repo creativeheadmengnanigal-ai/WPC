@@ -309,6 +309,11 @@ export default function Hero({ visible }: { visible: boolean }) {
   ];
 
   return (
+
+<h1 className="text-5xl font-bold">
+  Welding & Industrial Painting Services in UAE
+</h1>
+
     <section id="hero" className="hero-section">
       {/* Grid */}
       <div className="hero-grid" />
